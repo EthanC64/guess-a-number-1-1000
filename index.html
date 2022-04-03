@@ -11,23 +11,24 @@
 
   <body>
     <div id="text-container">
-      <p>Tries left 1/10</p>
-      <p>Number of wins</p>
+      <p>Tries left <span id="tries">0</span>/10</p>
+      <p>Number of wins: <span id="wins">0</span</p>
     </div>
 
     <div id="input-container">
       <label for="number">Pick a Number (1-1000): </label>
 
       <input
+        id="user-input"
         type="number"
         placeholder="Please enter a number 1-1000"
         name="guessedNum"
         min="1"
         max="1000"
       />
-      <input type="submit" />
+      <input id="submit" type="submit" />
     </div>
-    <div id="message-box">Higher</div>
+    <div id="message-box">Lets Play!</div>
   </body>
 
   <script src="./scripts.js"></script>
