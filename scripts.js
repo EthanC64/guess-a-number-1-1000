@@ -21,6 +21,9 @@ var playGame = function (e) {
     document.querySelector("#message-box").textContent =
       "You lose, sell your computer!";
 
+    //shows number
+    document.querySelector("#computerPick").textContent = computerPick;
+
     // reset tries
     tries = 0;
 
